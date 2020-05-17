@@ -1,5 +1,7 @@
 package com.training.recipe.domain;
 
+import lombok.*;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,6 +12,7 @@ import javax.persistence.Id;
  * inside the package - com.training.recipe.domain
  */
 
+@Data
 @Entity
 public class UnitOfMeasure {
 
@@ -19,19 +22,4 @@ public class UnitOfMeasure {
 
     private String uom;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUom() {
-        return uom;
-    }
-
-    public void setUom(String uom) {
-        this.uom = uom;
-    }
 }

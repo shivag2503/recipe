@@ -1,6 +1,7 @@
 package com.training.recipe.controllers;
 
 import com.training.recipe.services.RecipeService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * inside the package - com.training.recipe.controllers
  */
 
+@Slf4j
 @Controller
 public class RecipeController {
 

@@ -4,6 +4,7 @@ import com.training.recipe.domain.Category;
 import com.training.recipe.domain.UnitOfMeasure;
 import com.training.recipe.repositories.CategoryRepository;
 import com.training.recipe.repositories.UnitOfMeasureRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,7 @@ import java.util.Optional;
  * inside the package - com.training.recipe.controllers
  */
 
+@Slf4j
 @Controller
 public class IndexController {
 
